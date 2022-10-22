@@ -1,0 +1,38 @@
+{
+  "name": "sway-frontend-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:contract": "cd ./contract && forc build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export",
+    "gen:types": "rm -rf ./app/contract-types && npx fuelchain --target=fuels --out-dir=./app/contract-types ./contract/out/debug/*-abi.json",
+    "gen:wallet": "npx ts-node ./utils/generateWallet.ts",
+    "deploy:contract": "npx ts-node ./utils/deploy.ts"
+  },
+  "dependencies": {
+    "fuels": "^0.17.0",
+    "next": "^12.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.2",
+    "@types/node": "^18.11.3",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "autoprefixer": "^10.4.7",
+    "dotenv": "^16.0.3",
+    "eslint": "8.16.0",
+    "eslint-config-next": "12.1.6",
+    "fuelchain": "^0.17.0",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24",
+    "ts-node": "^10.9.1",
+    "typechain-target-fuels": "^0.17.0",
+    "typescript": "^4.8.4"
+  }
+}
