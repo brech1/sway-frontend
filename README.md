@@ -1,5 +1,7 @@
 # Sway Frontend Template
 
+![469dfcb6-d1dd-4d23-9fe0-6a0c6b20caac](https://user-images.githubusercontent.com/113475764/197348218-2cfcfd8c-38cf-4846-984b-7c2cad16b515.png)
+
 Take a look at the template working [here](https://sway-ui.vercel.app/).
 
 This project aims to:
